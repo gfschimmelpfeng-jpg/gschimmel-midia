@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade | G. Schimmelpfeng Advocacia</title>
+<meta name="description" content="Como a G. Schimmelpfeng Advocacia trata os dados pessoais de quem entra em contato pelo site, WhatsApp, telefone ou e-mail.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://gschimmel.com.br/privacidade/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preload" href="/assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Playfair";src:url("/assets/fonts/playfair.woff2") format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"Playfair";src:url("/assets/fonts/playfair-it.woff2") format("woff2");font-weight:400 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair SC";src:url("/assets/fonts/playfairsc.woff2") format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Montserrat";src:url("/assets/fonts/montserrat.woff2") format("woff2");font-weight:100 900;font-display:swap}
+
+:root{
+  --azul:#101B47;
+  --azul-fundo:#0C1538;
+  --azul-claro:#1C2A63;
+  --dourado:#C9A55C;
+  --dourado-texto:#A88A45;
+  --marfim:#F4EEE0;
+  --papel:#FBF9F4;
+  --tinta:#1A1D2B;
+  --tinta-suave:#4E5367;
+  --linha:#E2DED3;
+  --transito:#6B2433;
+  --previdenciario:#1E3A6E;
+  --trabalhista:#1F4D3A;
+  --imobiliario:#5A3A28;
+  --serif:"Playfair",Georgia,"Times New Roman",serif;
+  --sans:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --larg:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--sans);font-size:17px;line-height:1.65;font-variant-numeric:lining-nums}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--dourado);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--larg);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(32px,4.2vw,48px)}
+p{margin:0}
+.pular{position:absolute;left:-9999px}
+.pular:focus{left:16px;top:16px;z-index:99;background:#fff;color:var(--azul);padding:10px 16px}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--sans);font-weight:600;font-size:16px;text-decoration:none;padding:16px 26px;border-radius:999px;border:1.5px solid transparent;transition:background-color .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex-shrink:0}
+.btn-claro{background:var(--marfim);color:var(--azul)}
+.btn-claro:hover{background:#fff}
+.btn-linha{border-color:rgba(244,238,224,.35);color:var(--marfim)}
+.btn-linha:hover{border-color:var(--marfim)}
+.btn-azul{background:var(--azul);color:var(--marfim)}
+.btn-azul:hover{background:var(--azul-claro)}
+
+/* ---------- topo + hero ---------- */
+.hero{position:relative;overflow:hidden;color:var(--marfim);
+  background:radial-gradient(120% 90% at 85% 10%,#1A2760 0%,var(--azul) 45%,var(--azul-fundo) 100%)}
+.topo{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:28px;padding-bottom:28px}
+.marca{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--marfim)}
+.marca-ico{width:52px;height:52px;flex:none}
+.marca-nome{display:flex;flex-direction:column;gap:6px}
+.marca-nome b{font-family:"Playfair SC",var(--serif);font-weight:900;font-size:23px;line-height:.9;letter-spacing:.01em}
+.marca-nome b span{font-size:1.32em}
+.marca-nome i{display:flex;align-items:center;gap:10px;font-style:normal;font-family:"Playfair SC",var(--serif);font-weight:900;font-size:10.5px;letter-spacing:.5em;color:var(--dourado)}
+.marca-nome i::before{content:"";width:26px;height:2px;background:var(--dourado)}
+.menu{display:flex;align-items:center;gap:34px}
+.menu a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(244,238,224,.82)}
+.menu a:hover{color:var(--marfim)}
+.menu .btn{padding:11px 20px;font-size:15px}
+
+.hero-corpo{position:relative;z-index:2;padding-top:72px;padding-bottom:132px}
+.hero h1{font-size:clamp(34px,4.6vw,64px);font-weight:600;max-width:11.2em;line-height:1.08}
+.hero-sub{margin-top:30px;max-width:29em;font-size:19px;line-height:1.6;color:rgba(244,238,224,.82)}
+.hero-acoes{margin-top:44px;display:flex;flex-wrap:wrap;gap:14px}
+.hero-oab{margin-top:56px;font-size:14px;line-height:1.5;color:rgba(244,238,224,.6)}
+.hero-oab strong{display:block;font-weight:600;color:rgba(244,238,224,.85)}
+
+/* a assinatura: o elemento que fica na memória */
+/* proporções do símbolo e do ponto iguais às da marca */
+.assinatura{position:absolute;z-index:1;right:max(28px,calc((100% - var(--larg))/2 + 20px));top:54%;transform:translateY(-50%);height:min(70%,590px);aspect-ratio:1930/2345;pointer-events:none}
+.assinatura img{position:absolute;left:0;top:0;width:74%;height:100%;object-fit:contain;opacity:.94}
+.assinatura .ponto{position:absolute;width:10.5%;aspect-ratio:1;border-radius:50%;background:var(--dourado);right:4%;bottom:4%}
+@media (prefers-reduced-motion:no-preference){
+  .assinatura img{clip-path:inset(0 0 100% 0);animation:escrever 1.6s cubic-bezier(.6,.05,.25,1) .2s forwards}
+  .assinatura .ponto{transform:scale(0);animation:ponto .5s cubic-bezier(.3,1.6,.5,1) 1.75s forwards}
+}
+@keyframes escrever{to{clip-path:inset(0 0 0 0)}}
+@keyframes ponto{to{transform:scale(1)}}
+
+/* ---------- áreas ---------- */
+.areas{padding:120px 0 110px}
+.areas-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px 80px;align-items:end;margin-bottom:64px}
+.areas-intro p{color:var(--tinta-suave);max-width:30em}
+.area{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 64px;padding:44px 0 44px 36px;border-top:1px solid var(--linha)}
+.area:last-child{border-bottom:1px solid var(--linha)}
+.area::before{content:"";position:absolute;left:0;top:44px;bottom:44px;width:5px;border-radius:3px;background:var(--cor)}
+.area h3{font-size:clamp(28px,3vw,36px);color:var(--cor)}
+.area-resumo{margin-top:10px;color:var(--tinta-suave)}
+.area-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:600;font-size:15px;color:var(--cor);text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+.area-link:hover{opacity:.8}
+.area-mais{margin-top:14px;font-size:15px;color:var(--tinta-suave)}
+.area-mais a{color:var(--cor);font-weight:600}
+.area ul{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.area li{break-inside:avoid;padding:9px 0 9px 22px;position:relative;font-size:16px;line-height:1.45}
+.area li::before{content:"";position:absolute;left:0;top:17px;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--cor)}
+.t{--cor:var(--transito)} .p{--cor:var(--previdenciario)} .tr{--cor:var(--trabalhista)} .i{--cor:var(--imobiliario)}
+
+/* ---------- trânsito em destaque ---------- */
+.notificacao{background:var(--transito);color:var(--marfim);padding:110px 0;position:relative;overflow:hidden}
+.notif-grade{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:start}
+.notificacao p.lead{margin-top:24px;font-size:18px;color:rgba(244,238,224,.85);max-width:32em}
+.notificacao .btn{margin-top:36px}
+.fases{list-style:none;margin:6px 0 0;padding:0;counter-reset:fase}
+.fases li{counter-increment:fase;position:relative;padding:0 0 34px 64px}
+.fases li:last-child{padding-bottom:0}
+.fases li::before{content:counter(fase);position:absolute;left:0;top:-2px;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--dourado);color:var(--dourado);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:19px}
+.fases li:not(:last-child)::after{content:"";position:absolute;left:21px;top:46px;bottom:4px;width:1px;background:rgba(201,165,92,.4)}
+.fases b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.25}
+.fases span{display:block;margin-top:4px;font-size:15.5px;color:rgba(244,238,224,.75)}
+.notif-obs{margin-top:34px;font-size:14px;color:rgba(244,238,224,.6);max-width:30em}
+
+/* ---------- como funciona ---------- */
+.passos{padding:120px 0;background:#fff}
+.passos h2{max-width:14em}
+.passos-lista{list-style:none;margin:60px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:48px;counter-reset:passo}
+.passos-lista li{counter-increment:passo;border-top:2px solid var(--azul);padding-top:26px}
+.passos-lista li::before{content:counter(passo);display:block;font-family:var(--serif);font-size:56px;line-height:1;font-weight:500;color:var(--dourado-texto);margin-bottom:20px}
+.passos-lista b{display:block;font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.25;color:var(--azul)}
+.passos-lista p{margin-top:10px;color:var(--tinta-suave);font-size:16px}
+
+/* ---------- sobre ---------- */
+.sobre{padding:120px 0;background:var(--marfim)}
+.sobre-grade{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:80px;align-items:center}
+.sobre figure{margin:0;position:relative;isolation:isolate}
+.sobre figure img{width:100%;aspect-ratio:5/6;object-fit:cover;object-position:50% 18%;border-radius:4px}
+.sobre .foto{display:block;position:relative;isolation:isolate}
+.sobre .foto::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--dourado);border-radius:4px;z-index:-1}
+.sobre figcaption{margin-top:30px;font-size:14px;line-height:1.5;color:var(--tinta-suave)}
+.sobre figcaption b{display:block;font-size:16px;color:var(--azul)}
+.sobre-texto p{margin-top:22px;font-family:var(--serif);font-size:20px;line-height:1.7;color:#2A2E40}
+.sobre-texto p:first-of-type{margin-top:30px}
+.sobre-texto .assina{margin-top:36px;height:74px;width:auto}
+
+/* ---------- perguntas ---------- */
+.perguntas{padding:120px 0;background:#fff}
+.perg-grade{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:80px}
+.perg-grade > div > p{margin-top:20px;color:var(--tinta-suave)}
+details{border-top:1px solid var(--linha)}
+details:last-child{border-bottom:1px solid var(--linha)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font-family:var(--serif);font-size:21px;font-weight:600;color:var(--azul);line-height:1.35}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex-shrink:0;width:14px;height:14px;border-right:2px solid var(--dourado-texto);border-bottom:2px solid var(--dourado-texto);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+details p{padding:0 48px 28px 0;color:var(--tinta-suave)}
+
+/* ---------- contato ---------- */
+.contato{background:var(--azul);color:var(--marfim);padding:120px 0 100px;position:relative;overflow:hidden}
+.contato-grade{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:end}
+.contato p.lead{margin-top:22px;font-size:18px;color:rgba(244,238,224,.8);max-width:30em}
+.contato .btn{margin-top:38px}
+.canais{list-style:none;margin:0;padding:0}
+.canais li{padding:20px 0;border-top:1px solid rgba(244,238,224,.16)}
+.canais li:last-child{border-bottom:1px solid rgba(244,238,224,.16)}
+.canais small{display:block;font-size:13.5px;color:rgba(244,238,224,.55)}
+.canais a,.canais span{font-size:19px;font-weight:500;text-decoration:none;color:var(--marfim)}
+.canais a:hover{color:var(--dourado)}
+
+/* ---------- rodapé ---------- */
+.rodape{background:var(--azul-fundo);color:rgba(244,238,224,.6);font-size:14px;line-height:1.6;padding:56px 0 64px}
+.rodape-grade{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px 64px}
+.rodape .marca{margin-bottom:22px}
+.rodape p + p{margin-top:6px}
+.rodape .etica{max-width:30em}
+
+/* ---------- barra fixa do celular ---------- */
+.barra-zap{display:none}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1000px){
+  .menu a:not(.btn){display:none}
+  .areas-intro,.notif-grade,.sobre-grade,.perg-grade,.contato-grade{grid-template-columns:1fr;gap:48px}
+  .area{grid-template-columns:1fr}
+  .passos-lista{grid-template-columns:1fr;gap:36px}
+  .sobre figure{max-width:440px}
+  .assinatura{right:-6%;opacity:.35}
+  .hero h1{max-width:13em}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .topo{padding-top:20px;padding-bottom:20px}
+  .marca-nome b{font-size:19px}
+  .marca-ico{width:44px;height:44px}
+  .menu .btn{display:none}
+  .hero-corpo{padding-top:40px;padding-bottom:96px}
+  .hero-sub{font-size:17px}
+  .hero-acoes .btn{width:100%;justify-content:center}
+  .assinatura{right:-22%;top:auto;bottom:-6%;transform:none;height:62%;opacity:.13}
+  .barra-zap{opacity:0;transform:translateY(120%);transition:opacity .3s,transform .3s}
+  .barra-zap.ver{opacity:1;transform:none}
+  .areas,.passos,.sobre,.perguntas,.notificacao,.contato{padding:84px 0}
+  .area{padding:36px 0 36px 26px}
+  .area::before{top:36px;bottom:36px}
+  .area ul{columns:1}
+  .sobre .foto::after{inset:12px -12px -12px 12px}
+  .sobre-texto p{font-size:18px}
+  details p{padding-right:0}
+  .barra-zap{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;justify-content:center;align-items:center;gap:10px;padding:16px;border-radius:999px;background:var(--azul);color:var(--marfim);font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(12,21,56,.35);border:1px solid rgba(201,165,92,.5)}
+  .barra-zap svg{width:20px;height:20px}
+  .rodape{padding-bottom:110px}
+}
+
+.priv-topo{background:var(--azul);color:var(--marfim);padding:28px 0 56px}
+.priv-topo h1{font-size:clamp(32px,4vw,48px);margin-top:40px}
+.priv-topo .marca{color:var(--marfim)}
+.texto{padding:72px 0 48px}
+.texto .wrap{max-width:780px}
+.texto h2{font-size:clamp(24px,2.8vw,30px);color:var(--azul);margin:48px 0 14px}
+.texto p,.texto li{max-width:42em}
+.texto p{margin-top:12px}
+.texto ul{margin:12px 0 0 1.1em;padding:0}
+.texto li{margin-top:8px}
+.nota{font-size:14.5px;color:var(--tinta-suave)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-conversa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.4L3.5 20.5l1.6-4.5A8.4 8.4 0 1 1 20.5 11.6Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8.6 9.4c.3 2.6 2.5 4.9 5.2 5.4l1.3-1.3 1.9.9-.4 1.6"/></symbol>
+</svg>
+<header class="priv-topo">
+  <div class="wrap">
+    <a class="marca" href="/" aria-label="G. Schimmelpfeng Advocacia, página inicial">
+      <img class="marca-ico" src="/assets/marca-ico.png" width="52" height="52" alt=""><span class="marca-nome"><b><span>S</span>chimmelpfeng</b><i>Advocacia</i></span>
+    </a>
+    <h1>Política de privacidade</h1>
+  </div>
+</header>
+<main class="texto"><div class="wrap">
+<h2>Quem é o controlador</h2>
+<p>G.F. Schimmelpfeng Sociedade Individual de Advocacia, CNPJ 63.850.055/0001-00, responsável técnico Dr. Gabriel Fagundes Schimmelpfeng, OAB/PR 129.078. Contato para assuntos de privacidade: <a href="mailto:contato@gschimmel.com.br">contato@gschimmel.com.br</a>.</p>
+
+<h2>Quais dados tratamos</h2>
+<ul>
+  <li><b>Contato pelo WhatsApp, telefone ou e-mail:</b> nome, número de telefone, mensagens e os documentos que você decidir enviar, como notificações e autos de infração.</li>
+  <li><b>Navegação no site:</b> dados técnicos (navegador, dispositivo, páginas visitadas) e, quando você chega por um anúncio do Google, um identificador de clique usado para medir se o anúncio gerou contato.</li>
+</ul>
+<p>Não pedimos pelo site número de documentos pessoais nem informações de saúde.</p>
+
+<h2>Para que usamos</h2>
+<ul>
+  <li>Responder ao seu contato e fazer a análise preliminar que você solicitou (art. 7º, V, da Lei nº 13.709/2018, LGPD).</li>
+  <li>Prestar os serviços advocatícios, se houver contratação, e cumprir obrigações legais e regulatórias (art. 7º, II e V, da LGPD).</li>
+  <li>Medir o desempenho dos nossos anúncios de forma agregada (art. 7º, IX, da LGPD). Não vendemos dados nem os usamos para outra finalidade.</li>
+</ul>
+
+<h2>Com quem compartilhamos</h2>
+<p>Com fornecedores necessários para o funcionamento do atendimento: hospedagem do site (Hostinger), mensagens (WhatsApp, da Meta) e medição de anúncios (Google). Fora disso, só quando houver obrigação legal ou ordem de autoridade competente.</p>
+
+<h2>Sigilo profissional</h2>
+<p>As informações que você nos confia estão protegidas pelo sigilo profissional do advogado (arts. 35 a 38 do Código de Ética e Disciplina da OAB), além das regras da LGPD.</p>
+
+<h2>Cookies</h2>
+<p>O site usa armazenamento local do navegador para lembrar, por até 30 dias, se a visita veio de um anúncio, e pode usar cookies da tag do Google para medir conversões. Quando a visita vem de um anúncio do Google, a mensagem do WhatsApp recebe um código curto de referência (por exemplo, "Ref. G-AB12C"), e esse código fica registrado junto com o identificador do clique no anúncio, sem nome, telefone ou outro dado pessoal, apenas para o escritório saber quais anúncios resultaram em atendimentos. Você pode apagar ou bloquear esses dados nas configurações do seu navegador e apagar o código da mensagem antes de enviá-la.</p>
+
+<h2>Por quanto tempo guardamos</h2>
+<p>Contatos que não resultam em contratação são mantidos apenas pelo tempo necessário ao atendimento. Dados de clientes são mantidos durante o serviço e pelos prazos legais de guarda.</p>
+
+<h2>Seus direitos</h2>
+<p>Você pode pedir confirmação de tratamento, acesso, correção, anonimização, eliminação, informações sobre compartilhamento e revogação do consentimento, nos termos do art. 18 da LGPD, pelo e-mail <a href="mailto:contato@gschimmel.com.br">contato@gschimmel.com.br</a>. Também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+<p class="nota">Última atualização: 8 de novembro de 2026.</p>
+</div></main>
+<footer class="rodape">
+  <div class="wrap rodape-grade">
+    <div>
+      <a class="marca" href="/" aria-label="G. Schimmelpfeng Advocacia, página inicial">
+        <img class="marca-ico" src="/assets/marca-ico.png" width="52" height="52" alt=""><span class="marca-nome"><b><span>S</span>chimmelpfeng</b><i>Advocacia</i></span>
+      </a>
+      <p>G.F. Schimmelpfeng Sociedade Individual de Advocacia</p>
+      <p>CNPJ 63.850.055/0001-00</p>
+      <p>Advogado responsável: Dr. Gabriel Fagundes Schimmelpfeng, OAB/PR 129.078</p>
+    </div>
+    <div class="etica">
+      <p>Conteúdo de caráter exclusivamente informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021 do Conselho Federal da OAB.</p>
+      <p><a href="/privacidade/">Política de privacidade</a></p>
+      <p>© 2026 G. Schimmelpfeng Advocacia</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

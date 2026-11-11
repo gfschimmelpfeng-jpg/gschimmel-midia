@@ -1,0 +1,25 @@
+<?php
+// Registro de contatos vindos de anúncio do Google (código de referência + identificador do clique).
+// Os dados ficam fora da pasta pública. Usados só para medir contratos fechados no Google Ads.
+header('Content-Type: text/plain; charset=utf-8');
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); exit; }
+$ref = isset($_POST['ref']) ? $_POST['ref'] : '';
+if (!preg_match('/^G-[A-Z0-9]{5}$/', $ref)) { http_response_code(400); exit; }
+function campo($k, $max) {
+  $v = isset($_POST[$k]) ? (string)$_POST[$k] : '';
+  $v = preg_replace('/[^A-Za-z0-9_\-\/\.]/', '', $v);
+  return substr($v, 0, $max);
+}
+$linha = array(gmdate('Y-m-d\TH:i:s\Z'), $ref, campo('gclid', 200), campo('gbraid', 200), campo('wbraid', 200), campo('pagina', 80));
+$dir = dirname(__DIR__) . '/registro-anuncios';
+if (!is_dir($dir)) { @mkdir($dir, 0700, true); }
+$arq = $dir . '/contatos.csv';
+$novo = !file_exists($arq);
+$fp = @fopen($arq, 'a');
+if (!$fp) { http_response_code(500); exit; }
+flock($fp, LOCK_EX);
+if ($novo) fputcsv($fp, array('data_utc', 'ref', 'gclid', 'gbraid', 'wbraid', 'pagina'));
+fputcsv($fp, $linha);
+flock($fp, LOCK_UN);
+fclose($fp);
+http_response_code(204);
